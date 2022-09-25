@@ -1,0 +1,252 @@
+@accent-color: #FF8A00;
+@based-text-color: #252525;
+@plashki-color: #F2F2F2;
+@second-text-color: #AAAAAA;
+@price-color: #545454;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+body{
+  font-family: Montserrat, sans-serif;
+  color: @based-text-color
+}
+
+
+.header-block{
+  &__nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    //margin-top: 30px;
+
+  }
+  &__items{
+    display: flex;
+    font-weight: 600;
+    gap: 15px;
+  }
+  &__img-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('/images/IMG_1745.jpg');
+    //background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1250px;
+    &-text{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      text-align: center;
+      //vertical-align: middle;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      width: 50%;
+      //flex-basis: 50%;
+    }
+  }
+
+  &__text-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @plashki-color;
+    &-text{
+      padding: 100px 0;
+      flex-basis: 50%;
+      text-align: center;
+
+    }
+  }
+
+}
+
+.info-block{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 220px 0;
+  //gap: 100px;
+  &_reverse{
+    //flex-direction: row-reverse; не работает
+  }
+  &__grid-init{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 220px;
+  }
+  &__catalog{
+    background-color: @plashki-color;
+    padding: 150px 179px;
+    gap: unset;
+  }
+
+  &__article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 29px;
+    &_shift{
+      z-index: 2;
+    }
+
+
+  }
+  &__header{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-transform: uppercase;
+    /* Секонд текст */
+    color: @second-text-color;
+
+    &_big{
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 50px;
+       }
+  }
+
+  &__text{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  &__image{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_shift{
+      transform: translateX(-15%) scaleX(1.4) ;
+    }
+
+  }
+}
+
+.image{
+
+  background: #C4C4C4;
+  height: auto;
+  width: 100%;
+  //flex-shrink: 0;
+  //flex: 0 0 50%
+}
+
+.image-slide{
+  height: 600px;
+  //width: 340px;
+  //width: 300px;
+  //background: #C4C4C4;
+  flex: 0 0 50%;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  &__img{
+    height: 100%;
+    width: auto;
+
+  }
+}
+
+.collections{
+
+  &__header{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 30px;
+  }
+  &__sliders{
+    //width: 70%;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    flex-basis: 100%;
+    justify-content: center;
+
+  }
+  &__slide{
+    display: none;
+    //flex-direction: column;
+
+  }
+  &__arrow{
+    font-family: Arial, serif;
+    font-size: 30px;
+    //transform: scalex(200%);
+    //margin: 0 50px;
+    flex-basis: 30%;
+    text-align: center;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__caption{
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  &__wrap{
+    display: flex;
+    align-items: center;
+
+  }
+}
+
+.footer{
+  background: @plashki-color;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+  line-height: 21px;
+  flex-wrap: wrap;
+  &__menu{
+    font-weight: 600;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+  &__social{
+    font-weight: 400;
+    color: @price-color;
+
+  }
+  &__logo{
+
+  }
+
+}
+
+.logo{
+  height: 44px;
+  line-height: 44px;
+  width: 190px;
+  background: white;
+  font-weight: 800;
+  font-size: 26px;
+  text-align: center;
+  //vertical-align: middle;
+
+}
