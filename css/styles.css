@@ -43,7 +43,7 @@ body {
 }
 .header-block__img-block {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
   background-image: url('/images/IMG_1745.jpg');
