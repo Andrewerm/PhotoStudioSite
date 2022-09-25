@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf) format('truetype');
+}
+body {
+  font-family: Montserrat, sans-serif;
+  color: #252525;
+}
+.header-block__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+.header-block__items {
+  display: flex;
+  font-weight: 600;
+  gap: 15px;
+}
+.header-block__img-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('/images/IMG_1745.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1250px;
+}
+.header-block__img-block-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 50%;
+}
+.header-block__text-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F2F2F2;
+}
+.header-block__text-block-text {
+  padding: 100px 0;
+  flex-basis: 50%;
+  text-align: center;
+}
+.info-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 220px 0;
+}
+.info-block__grid-init {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 220px;
+}
+.info-block__catalog {
+  background-color: #F2F2F2;
+  padding: 150px 179px;
+  gap: unset;
+}
+.info-block__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 29px;
+}
+.info-block__article_shift {
+  z-index: 2;
+}
+.info-block__header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  text-transform: uppercase;
+  /* Секонд текст */
+  color: #AAAAAA;
+}
+.info-block__header_big {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+}
+.info-block__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+}
+.info-block__image {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-block__image_shift {
+  transform: translateX(-15%) scaleX(1.4);
+}
+.image {
+  background: #C4C4C4;
+  height: auto;
+  width: 100%;
+}
+.image-slide {
+  height: 600px;
+  flex: 0 0 50%;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.image-slide__img {
+  height: 100%;
+  width: auto;
+}
+.collections__header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+.collections__sliders {
+  margin: 70px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  flex-basis: 100%;
+  justify-content: center;
+}
+.collections__slide {
+  display: none;
+}
+.collections__arrow {
+  font-family: Arial, serif;
+  font-size: 30px;
+  flex-basis: 30%;
+  text-align: center;
+}
+.collections__arrow:hover {
+  cursor: pointer;
+}
+.collections__caption {
+  margin-top: 10px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+.collections__wrap {
+  display: flex;
+  align-items: center;
+}
+.footer {
+  background: #F2F2F2;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+  line-height: 21px;
+  flex-wrap: wrap;
+}
+.footer__menu {
+  font-weight: 600;
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social {
+  font-weight: 400;
+  color: #545454;
+}
+.logo {
+  height: 44px;
+  line-height: 44px;
+  width: 190px;
+  background: white;
+  font-weight: 800;
+  font-size: 26px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
